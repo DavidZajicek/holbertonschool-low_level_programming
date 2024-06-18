@@ -4,6 +4,11 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there return int */
+/**
+ * main
+ * description: print ranodm numbers
+ * return: 0
+ */
 int main(void)
 {
 	int n;
