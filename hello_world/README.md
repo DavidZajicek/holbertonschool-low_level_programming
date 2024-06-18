@@ -6,4 +6,5 @@
 3-name - Compile a C file with an exe named cisfun
 4-puts.c - puts
 5-printf.c - printf
+6-size.c - Print out the sizes of various types
 
