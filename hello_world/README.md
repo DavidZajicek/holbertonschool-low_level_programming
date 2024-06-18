@@ -10,3 +10,4 @@
 
 #Advanced Tasks
 100-intel - generate the assembly code .s of $CFILE
+101-quote.c - print to standard error
