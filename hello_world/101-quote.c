@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * main - printf text into standard error
+ * main -  text into standard error
  * Return: returns 1
  */
 int main(void)
