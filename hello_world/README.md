@@ -8,3 +8,5 @@
 5-printf.c - printf
 6-size.c - Print out the sizes of various types
 
+#Advanced Tasks
+100-intel - generate the assembly code .s of $CFILE
