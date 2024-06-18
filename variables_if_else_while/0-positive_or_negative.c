@@ -5,9 +5,8 @@
 
 /* betty style doc for function main goes there return int */
 /**
- * main
- * description: print ranodm numbers
- * return: 0
+ * main -  text into standard error
+ * Return: returns 1
  */
 int main(void)
 {
