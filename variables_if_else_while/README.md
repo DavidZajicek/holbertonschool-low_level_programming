@@ -5,3 +5,4 @@
 2-print_alphabet.c - print a-z using putchar
 3-print_alphabets.c - print a-zA-Z using putchar
 4-print_alphabt.c - print a-z but not q or e
+5-print_numbers.c - print 0-9
