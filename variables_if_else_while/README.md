@@ -9,3 +9,4 @@
 6-print_numberz.c - print 0-9 without using char
 7-print_tebahpla.c - print z-a
 8-print_base16.c - print 0123456789abcdef
+9-print_comb.c - print 0, 1, etc
