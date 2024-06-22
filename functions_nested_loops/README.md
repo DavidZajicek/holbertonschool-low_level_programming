@@ -8,3 +8,4 @@
 5-sign.c - Print the sign of a number
 6-abs.c - compute the absolute value of an integer
 7-print_last_digit.c - print the last digit of the given number
+8-24-hours.c - print every minute in 24 hours
