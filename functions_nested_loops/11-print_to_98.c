@@ -10,6 +10,13 @@ int print_to_98(int n)
 	static int m = 98;
 	int i;
 
+	if (n == m)
+	{
+		_putchar('0' + (n / 10));
+		_putchar('0' + (n % 10));
+		_putchar('\n');
+		return (0);
+	}
 	if (n < m)
 	{
 		for (i = n ; i <= m ; i++)
