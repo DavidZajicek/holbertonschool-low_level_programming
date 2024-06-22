@@ -13,6 +13,7 @@ int main(void)
 	while (output[i])
 	{
 		char x = output[i];
+
 		_putchar(x);
 		i++;
 	}
