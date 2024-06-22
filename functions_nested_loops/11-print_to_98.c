@@ -8,12 +8,20 @@
 int print_to_98(int n)
 {
 	static int m = 98;
-	int i, d;
+	int i, d, negative;
+
 
 	while (n != m)
 	{
 		i = n;
 		d = 10;
+
+		if (n < 0)
+		{
+			negative = 1;
+			i = -n;
+			_putchar('-');
+		}
 
 		while (d <= i)
 		{
