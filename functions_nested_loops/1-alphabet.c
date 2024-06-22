@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet - print alphabet
- * Return: 0
+ * Return: void
  */
 void print_alphabet(void)
 {
@@ -13,5 +13,5 @@ void print_alphabet(void)
 		_putchar(ch);
 	}
 	_putchar('\n');
-	return (void);
+	return ();
 }
