@@ -23,6 +23,5 @@ int print_sign(int n)
 		_putchar(45);
 		retval = -1;
 	}
-	_putchar('\n');
 	return (retval);
 }
