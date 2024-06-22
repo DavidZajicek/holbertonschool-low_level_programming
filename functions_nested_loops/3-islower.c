@@ -1,0 +1,14 @@
+
+/**
+ * _islower - check if lowercase
+ * @c: integer value of the given character to compare
+ * Return: 1 if lowercase 0 if not
+ */
+int _islower(int c)
+{
+	int retval = 0;
+
+	if (c <= 122 && c >= 97)
+		retval = 1;
+	return (retval);
+}
