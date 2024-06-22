@@ -10,3 +10,4 @@
 7-print_last_digit.c - print the last digit of the given number
 8-24-hours.c - print every minute in 24 hours
 9-times_table.c - print the 9 times table starting from 0
+10-add.c - add two integers and return the result
