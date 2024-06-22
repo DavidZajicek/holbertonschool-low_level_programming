@@ -9,14 +9,33 @@ int print_to_98(int n)
 {
 	static int m = 98;
 
-	for (n ; n <= 98 ; n++)
+	if (n < m)
 	{
-		if ((n >= 10) || (n <= -10))
-			_putchar('0' + (n / 10));
-		_putchar('0' + (n % 10));
-		_putchar(',');
-		_putchar(' ');
+		for (n ; n <= m ; n++)
+		{
+			if (n <= -100)
+				_putchar('0' + (n / 100));
+			if ((n >= 10) || (n <= -10))
+				_putchar('0' + (n / 10));
+			_putchar('0' + (n % 10));
+			_putchar(',');
+			_putchar(' ');
+		}
+		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		for (n ; n >= m ; n--)
+		{
+			if (n >= 100)
+				_putchar('0' + (n / 100));
+			if (n >= 10)
+				_putchar('0' + (n / 10));
+			_putchar('0' + (n % 10));
+			_putchar(',');
+			_putchar(' ');
+		}
+		_putchar('\n');
+	}
 	return (0);
 }
