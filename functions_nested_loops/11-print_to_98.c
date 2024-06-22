@@ -16,7 +16,7 @@ int print_to_98(int n)
 		{
 			_putchar('0' + (n / 100));
 			i = n % 100;
-			_putchar('0' + (n / 10);
+			_putchar('0' + (n / 10));
 		}
 		else if ((n >= 10) || (n <= -10))
 			_putchar('0' + (n / 10));
