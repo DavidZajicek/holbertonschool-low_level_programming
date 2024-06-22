@@ -11,3 +11,4 @@
 8-24-hours.c - print every minute in 24 hours
 9-times_table.c - print the 9 times table starting from 0
 10-add.c - add two integers and return the result
+11-print_to_98.c - Print all numbers up to 98
