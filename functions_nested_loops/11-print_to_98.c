@@ -9,8 +9,6 @@ int print_to_98(int n)
 {
 	static int m = 98;
 	int i = n;
-	int final = 0;
-
 
 	while (i != m)
 	{
