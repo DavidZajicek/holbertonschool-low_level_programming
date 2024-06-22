@@ -12,8 +12,6 @@ int print_to_98(int n)
 
 	while (i != m)
 	{
-		if (i == m)
-			final = 1;
 		if (i <= -100)
 		{
 			_putchar('0' + (i / 100));
