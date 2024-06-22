@@ -8,7 +8,7 @@
 int print_to_98(int n)
 {
 	static int m = 98;
-	int i, d, negative;
+	int i, d;
 
 
 	while (n != m)
@@ -18,7 +18,6 @@ int print_to_98(int n)
 
 		if (n < 0)
 		{
-			negative = 1;
 			i = -n;
 			_putchar('-');
 		}
