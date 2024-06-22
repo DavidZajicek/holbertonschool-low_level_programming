@@ -12,16 +12,16 @@ int print_to_98(int n)
 
 	while (n != m)
 	{
-		if ((n <= -100) || (n >= 100))
+		i = n;
+		if ((i <= -100) || (i >= 100))
 		{
-			_putchar('0' + (n / 100));
+			_putchar('0' + (i / 100));
 			i = n % 100;
-			_putchar('0' + (n / 10));
 		}
-		else if ((n >= 10) || (n <= -10))
-			_putchar('0' + (n / 10));
-		_putchar('0' + (n % 10));
-		if (i < m)
+		if ((i >= 10) || (i <= -10))
+			_putchar('0' + (i / 10));
+		_putchar('0' + (i % 10));
+		if (n < m)
 			n++;
 		else
 			n--;
