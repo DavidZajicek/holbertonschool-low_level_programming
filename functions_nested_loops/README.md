@@ -6,3 +6,4 @@
 3-islower.c - Check if a character is lowercase
 4-isalpha.c - Check if given character int is alpha
 5-sign.c - Print the sign of a number
+6-abs.c - compute th absolute value of an integer
