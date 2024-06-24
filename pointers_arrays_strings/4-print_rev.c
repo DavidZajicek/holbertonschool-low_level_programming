@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _print_rev - prints the given string to stdout in reverse
+ * print_rev - prints the given string to stdout in reverse
  * @s: string to print
  * Return: 0
  */
-int _print_rev(char *s)
+int print_rev(char *s)
 {
 	int pos = 0;
 
