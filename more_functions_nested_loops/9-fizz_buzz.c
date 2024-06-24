@@ -13,7 +13,7 @@ int main(void)
 
 	for (i = 1 ; i <= 100 ; i++)
 	{
-		itoa(i, output, 10);
+		snprintf(output, 10, "%d", i);
 
 		if ((i % 3) == 0)
 		{
