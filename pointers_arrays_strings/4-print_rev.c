@@ -16,6 +16,8 @@ int print_rev(char *s)
 		pos++;
 	}
 
+	pos--;
+
 	while (pos >= 0)
 	{
 		s--;
