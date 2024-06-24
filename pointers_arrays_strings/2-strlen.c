@@ -3,7 +3,7 @@
  * @s: string to count
  * Return: 0
  */
-int _strlen(char *s);
+int _strlen(char *s)
 {
 	int count = sizeof(s);
 
