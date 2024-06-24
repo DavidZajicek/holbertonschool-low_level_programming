@@ -5,10 +5,10 @@
  */
 int _strlen(char *s)
 {
-	int i, count;
-	char temp = *s;
+	int count;
+	char *temp = *s;
 
-	for (i = 0 ; temp[i] != 0 ; i++)
-		count += 1;
+	for (temp = s ; *temp != 0 ; temp++)
+		count++;
 	return (count);
 }
