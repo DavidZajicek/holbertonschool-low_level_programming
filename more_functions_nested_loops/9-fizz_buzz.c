@@ -23,11 +23,11 @@ int main(void)
 		{
 			if (strcmp(output, "Fizz"))
 			{
-				strcopy(output, "FizzBuzz");
+				strcpy(output, "FizzBuzz");
 			}
 			else
 			{
-				strcopy(output, "Buzz");
+				strcpy(output, "Buzz");
 			}
 		}
 		printf("%s ", output);
