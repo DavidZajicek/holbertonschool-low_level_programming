@@ -30,7 +30,10 @@ int main(void)
 				strcpy(output, "FizzBuzz");
 			}
 		}
-		printf("%s ", output);
+		if (i != 100)
+			printf("%s", output);
+		else
+			printf("%s ", output);
 	}
 	putchar('\n');
 	return (0);
