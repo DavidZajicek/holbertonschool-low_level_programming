@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * print_line - print a line of _
+ * @n: the amount of _ to be printed
+ * Return: 0
+ */
+int print_line(int n)
+{
+	int i;
+
+	for (i = 1 ; i <= n ; i++)
+	{
+		_putchar('_');
+	}
+	_putchar('\n');
+
+	return (0);
+}
