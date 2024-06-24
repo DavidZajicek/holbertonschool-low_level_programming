@@ -5,7 +5,13 @@
  */
 int _strlen(char *s)
 {
-	char count = *s;
+	int count;
 
-	return (sizeof(count));
+	while (*s != '\0')
+	{
+		count++;
+		s++;
+	}
+
+	return (count);
 }
