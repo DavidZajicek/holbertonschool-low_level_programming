@@ -19,10 +19,10 @@ int print_triangle(int size)
 			_putchar(' ');
 			k--;
 		}
-		while (j <= size)
+		while (j > 0)
 		{
 			_putchar('#');
-			j++;
+			j--;
 		}
 		_putchar('\n');
 	}
