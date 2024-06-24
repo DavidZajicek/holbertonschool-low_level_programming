@@ -12,21 +12,21 @@ int main(void)
 
 	for (i = 1 ; i <= 100 ; i++)
 	{
-		output = itoa(i, output, 10);
+		itoa(i, output, 10);
 
 		if ((i % 3) == 0)
 		{
-			output = "Fizz";
+			strcpy(output, "Fizz");
 		}
 		if ((i % 5) == 0)
 		{
-			if (output == "Fizz")
+			if (strcmp(output, "Fizz"))
 			{
-				output = "FizzBuzz";
+				strcopy(output, "FizzBuzz");
 			}
 			else
 			{
-				output = "Buzz";
+				strcopy(output, "Buzz");
 			}
 		}
 		printf("%s ", output);
