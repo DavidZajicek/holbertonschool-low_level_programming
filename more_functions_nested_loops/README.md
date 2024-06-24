@@ -8,3 +8,4 @@
 5-more_numbers.c - print 0-14 10 times, each on a new line
 6-print_line.c - write a function that draws a straight line in the terminal
 7-print_diagonal.c - Print a diagonal line using \
+8-print_square.c - Print a square
