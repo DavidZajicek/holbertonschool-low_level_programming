@@ -5,7 +5,9 @@
  */
 int _strlen(char *s)
 {
-	int count = sizeof(&s);
+	int count;
 
+	while (*s)
+		count += 1;
 	return (count);
 }
