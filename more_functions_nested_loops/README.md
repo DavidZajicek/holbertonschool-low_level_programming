@@ -9,3 +9,4 @@
 6-print_line.c - write a function that draws a straight line in the terminal
 7-print_diagonal.c - Print a diagonal line using \
 8-print_square.c - Print a square
+9-fizz_buzz.c - print 1 to 100 but multiples of 3, 5 are replaced with FizzBuzz
