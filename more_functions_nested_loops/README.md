@@ -10,3 +10,4 @@
 7-print_diagonal.c - Print a diagonal line using \
 8-print_square.c - Print a square
 9-fizz_buzz.c - print 1 to 100 but multiples of 3, 5 are replaced with FizzBuzz
+10-print_triangle.c - print a triangle
