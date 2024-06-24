@@ -6,7 +6,7 @@
 int _strlen(char *s)
 {
 	int count;
-	char *temp = *s;
+	char *temp = s;
 
 	for (temp = s ; *temp != 0 ; temp++)
 		count++;
