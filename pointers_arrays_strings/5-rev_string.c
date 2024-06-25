@@ -17,8 +17,8 @@ int rev_string(char *s)
 		s++;
 	}
 
-	pos--;
 	s -= pos;
+	pos--;
 
 	while (pos >= 0)
 	{
