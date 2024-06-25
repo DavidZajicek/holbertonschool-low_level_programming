@@ -8,5 +8,6 @@ int _strlen(char *s);
 int _puts(char *str);
 int print_rev(char *s);
 int rev_string(char *s);
+int puts2(char *str);
 
 #endif

@@ -6,3 +6,4 @@
 3-puts.c - Print a string, followed by a new line based on the given string
 4-print_rev.c - print a string in reverse
 5-rev-string.c - return a string after reversing it
+6-puts2.c - print every other character of a string
