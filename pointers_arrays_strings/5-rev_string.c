@@ -3,9 +3,9 @@
 /**
  * rev_string - returns the given string in reverse
  * @s: string to reverse
- * Return: char
+ * Return: 0
  */
-char rev_string(char *s)
+int rev_string(char *s)
 {
 	int pos = 0;
 	char temp[_strlen(*s)];
@@ -25,5 +25,5 @@ char rev_string(char *s)
 		pos--;
 		s--;
 	}
-	return (rev);
+	return (0);
 }
