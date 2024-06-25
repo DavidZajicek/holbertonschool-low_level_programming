@@ -15,7 +15,6 @@ int puts_half(char *str)
 		str++;
 	}
 
-	len--;
 	str -= ((len - 1) / 2);
 
 
