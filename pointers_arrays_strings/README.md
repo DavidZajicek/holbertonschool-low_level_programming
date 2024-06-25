@@ -9,3 +9,4 @@
 6-puts2.c - print every other character of a string
 7-puts_half.c - print the second half of a given string
 8-print_array.c - print n elements of an array of integers
+9-strcpy.c - copy a str
