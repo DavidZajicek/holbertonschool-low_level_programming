@@ -24,7 +24,7 @@ int rev_string(char *s)
 	{
 		*s = temp[pos];
 		pos--;
-		s--;
+		s++;
 	}
 	return (0);
 }
