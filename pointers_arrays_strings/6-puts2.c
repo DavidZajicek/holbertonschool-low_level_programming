@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts2 - prints the given string to stdout, skipping every second character
+ * puts2 - prints the given string to stdout, skipping every second character
  * @str: string to print
  * Return: 0
  */
-int _puts2(char *str)
+int puts2(char *str)
 {
 	int pos = 0;
 
