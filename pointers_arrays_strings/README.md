@@ -5,3 +5,4 @@
 2-strlen.c - return the length of a string
 3-puts.c - Print a string, followed by a new line based on the given string
 4-print_rev.c - print a string in reverse
+5-rev-string.c - return a string after reversing it

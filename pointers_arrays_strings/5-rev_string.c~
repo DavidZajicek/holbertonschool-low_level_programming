@@ -1,0 +1,33 @@
+#include "main.h"
+
+/**
+ * rev_string - returns the given string in reverse
+ * @s: string to reverse
+ * Return: char
+ */
+char rev_string(char *s)
+{
+	int pos = 0;
+	int rev_pos = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		pos++;
+	}
+
+	char rev[pos];
+
+	pos--;
+
+	while (pos >= 0)
+	{
+		s--;
+		rev[rev_pos];
+		pos--;
+		rev_pos++;
+	}
+
+
+	return (rev);
+}
