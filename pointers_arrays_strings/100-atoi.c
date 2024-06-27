@@ -1,23 +1,4 @@
 /**
- *handle_mix - handle signs
- * @s: character to handle
- * @sign: pointer to the sign in memory
- * Return: 0
- */
-int handle_mix(char s, int *sign)
-{
-	if (s == 43)
-	{
-		*sign = *sign + 1;
-	}
-	if (s == 45)
-	{
-		*sign = *sign - 1;
-	}
-	return (0);
-}
-
-/**
  * _atoi - converts a string into an int
  * @s: the string to convert
  * Return: the int from the string, 0 if no int found in string
@@ -26,7 +7,7 @@ int _atoi(char *s)
 {
 	unsigned int temp = 0;
 	int result = 0;
-	int sign = 0;
+	int sign = 1;
 	int found = 0;
 
 	while (*s != '\0')
@@ -37,7 +18,10 @@ int _atoi(char *s)
 			{
 				break;
 			}
-			handle_mix(*s, &sign);
+			if (*s == 45)
+			{
+				sign = sign * -1;
+			}
 		}
 		else
 		{
