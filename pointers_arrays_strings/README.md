@@ -16,3 +16,4 @@
 
 0-strcat.c - concatenate two strings
 1-strncat.c - concatenate two trings up to n characters
+2-strncpy.c - copy a string up to n characters
