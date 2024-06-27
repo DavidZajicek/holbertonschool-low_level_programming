@@ -13,12 +13,12 @@ int _strcmp(char *s1, char *s2)
 	{
 		if (*s1 != '\0')
 		{
-			s1_total += *s1;
+			s1_total += (*s1 + 0);
 			s1++;
 		}
 		if (*s2 != '\0')
 		{
-			s2_total += *2;
+			s2_total += (*2 + 0);
 			s2++;
 		}
 	}
