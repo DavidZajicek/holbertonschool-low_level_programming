@@ -15,3 +15,4 @@
 # More Pointers
 
 0-strcat.c - concatenate two strings
+1-strncat.c - concatenate two trings up to n characters
