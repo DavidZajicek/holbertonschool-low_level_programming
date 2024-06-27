@@ -4,7 +4,7 @@
  * @s2: second string
  * Return: 0 if the same, the number if different
  */
-int *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int total = 0;
 
