@@ -6,16 +6,22 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int total = 0;
+	int s1_total = 0;
+	int s2_total = 0;
 
 	while (*s1 != '\0' && *s2 != '\0')
 	{
-		total += *s1 - *s2;
 		if (*s1 != '\0')
+		{
+			s1_total += *s1;
 			s1++;
+		}
 		if (*s2 != '\0')
+		{
+			s2_total += *2;
 			s2++;
+		}
 	}
 
-	return (total);
+	return (s1_total - s2_total);
 }
