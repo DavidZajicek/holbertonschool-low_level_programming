@@ -11,3 +11,7 @@
 8-print_array.c - print n elements of an array of integers
 9-strcpy.c - copy a str
 100-atoi.c - convert a string to an int
+
+# More Pointers
+
+0-strcat.c - concatenate two strings
