@@ -5,21 +5,26 @@
  */
 char *leet(char *str)
 {
+	int i = 0;
 	char *ptr = str;
+	char symbols[256] = {0};
 
-	while (*str != '\0')
+	symbols['a'] = '4';
+	symbols['A'] = '4';
+	symbols['e'] = '3';
+	symbols['E'] = '3';
+	symbols['o'] = '0';
+	symbols['O'] = '0';
+	symbols['t'] = '7';
+	symbols['T'] = '7';
+	symbols['l'] = '1';
+	symbols['L'] = '1';
+
+	while (str[i] != '\0')
 	{
-		if (*str == 65 || *str == 97)
-			*str = 52;
-		else if (*str == 69 || *str == 101)
-			*str = 51;
-		else if (*str == 79 || *str == 111)
-			*str = 48;
-		else if (*str == 84 || *str == 116)
-			*str = 55;
-		else if (*str == 76 || *str == 108)
-			*str = 49;
-		str++;
+		if (symbols[str[i]] != 0)
+			str[i] = symbols[str[i]];
+		i++;
 	}
 	return (ptr);
 }
