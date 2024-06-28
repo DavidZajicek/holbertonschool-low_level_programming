@@ -18,3 +18,4 @@
 1-strncat.c - concatenate two trings up to n characters
 2-strncpy.c - copy a string up to n characters
 3-strcmp.c - Compare two strings
+4-rev_array.c - Reverse the content of an array
