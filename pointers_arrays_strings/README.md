@@ -19,3 +19,4 @@
 2-strncpy.c - copy a string up to n characters
 3-strcmp.c - Compare two strings
 4-rev_array.c - Reverse the content of an array
+5-string_toupper.c - Change all lowercase letters to uppercase in a given string
