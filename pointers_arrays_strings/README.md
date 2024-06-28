@@ -20,3 +20,4 @@
 3-strcmp.c - Compare two strings
 4-rev_array.c - Reverse the content of an array
 5-string_toupper.c - Change all lowercase letters to uppercase in a given string
+6-cap_string.c - Capitalise each word in a given string
