@@ -8,9 +8,11 @@ int _strcmp(char *s1, char *s2)
 {
 	int total = 0;
 
-	while (*s1 != '\0' || *s2 != '\0')
+	while (*s1 != '\0' && *s2 != '\0')
 	{
-		total += *s1 - *s2;
+		total = *s1 - *s2;
+		if (total != 0)
+			break;
 		if (*s1 != '\0')
 			s1++;
 		if (*s2 != '\0')
