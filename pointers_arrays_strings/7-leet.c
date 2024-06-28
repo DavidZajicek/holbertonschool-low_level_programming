@@ -8,6 +8,7 @@ char *leet(char *str)
 	int i = 0;
 	char *ptr = str;
 	char symbols[256] = {0};
+	int charnum = 0;
 
 	symbols['a'] = '4';
 	symbols['A'] = '4';
@@ -22,8 +23,9 @@ char *leet(char *str)
 
 	while (str[i] != '\0')
 	{
-		if (symbols[str[i]] != 0)
-			str[i] = symbols[str[i]];
+		charnum = str[i];
+		if (symbols[charnum] != 0)
+			str[i] = symbols[charnum];
 		i++;
 	}
 	return (ptr);
