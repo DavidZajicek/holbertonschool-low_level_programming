@@ -16,13 +16,13 @@ char *cap_string(char *str)
 		{
 			new_word = 1;
 		}
-		if (*str >= 65 && *str <= 90)
-		{
-			new_word = 0;
-		}
 		if ((*str >= 97 && *str <= 122) && new_word)
 		{
 			*str -= 32;
+			new_word = 0;
+		}
+		else
+		{
 			new_word = 0;
 		}
 		str++;
