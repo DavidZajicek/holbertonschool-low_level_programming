@@ -1,11 +1,11 @@
 /**
- * rev_array - reverse an array of integers
+ * reverse_array - reverse an array of integers
  * @a: an array of integers
  * @n: the number of elements to swap
  *
  * Return: nothing.
  */
-void rev_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 	int i = 0;
 	int temp[100];
