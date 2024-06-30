@@ -22,3 +22,7 @@
 5-string_toupper.c - Change all lowercase letters to uppercase in a given string
 6-cap_string.c - Capitalise each word in a given string
 7-leet.c - Convert string to 1337sp34k
+
+# Even More Pointers
+
+0-memset.c - Fill memory with a constant byte
