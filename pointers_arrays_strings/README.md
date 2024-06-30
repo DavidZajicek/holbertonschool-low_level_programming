@@ -27,3 +27,4 @@
 
 0-memset.c - Fill memory with a constant byte
 1-memcpy.c - Copy memory
+2-strchr.c - Locate a character in a string
