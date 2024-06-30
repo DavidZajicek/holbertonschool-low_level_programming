@@ -6,7 +6,7 @@
  */
 char *_strchr(char *s, char c)
 {
-	char nil = "nil";
+	char nil[10] = "nil";
 	char *result = nil;
 
 	while (*s != '\0')
