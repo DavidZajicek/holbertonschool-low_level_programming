@@ -31,3 +31,4 @@
 3-strcpn.c - get the length of a prefix given a string of characters to compare?
 4-strpbrk.c - search a string for a set of bites
 5-strstr.c - locate a substring
+7-print_chessboard.c - print a chessboard
