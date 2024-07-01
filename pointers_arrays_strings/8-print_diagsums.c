@@ -12,16 +12,16 @@ void print_diagsums(int *a, int size)
 
 	while (i < size)
 	{
-		sum1 += a[i][k];
+		sum1 += *(a + i + k);
 		i++;
-		k++;
+		k += sizeof(int);
 	}
 	i = 0;
 	while (i < size)
 	{
-		sum2 += a[i][k];
+		sum2 += *(a + i + k);
 		i++;
-		k--;
+		k -= sizeof(int);
 	}
 	printf("%d, %d\n", sum1, sum2);
 }
