@@ -8,7 +8,7 @@
  */
 void print_diagsums(int *a, int size)
 {
-	int i = 0, k = 1, sum1 = 0, sum2 = 0;
+	int i = 0, k = 0, sum1 = 0, sum2 = 0;
 
 	while (i < size)
 	{
@@ -17,9 +17,10 @@ void print_diagsums(int *a, int size)
 		k++;
 	}
 	i = 0;
+	k--;
 	while (i < size)
 	{
-		sum2 += a[((i * size + k) * sizeof(int))];
+		sum2 += a[((i * size + k))];
 		i++;
 		k--;
 	}
