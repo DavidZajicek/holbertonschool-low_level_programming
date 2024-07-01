@@ -32,3 +32,4 @@
 4-strpbrk.c - search a string for a set of bites
 5-strstr.c - locate a substring
 7-print_chessboard.c - print a chessboard
+8-print_diagsums.c - print the sum of the two diagonals of a square matrix
