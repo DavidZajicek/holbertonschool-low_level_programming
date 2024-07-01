@@ -6,19 +6,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	char nil = '\0';
-	char *result = nil;
-
 	while (*s != '\0')
 	{
 		if (*s == c)
 		{
-			result = s;
 			break;
 		}
 		s++;
 	}
-	if (*s != '\0')
-		return (result);
-	return (NULL);
+	return (s);
 }
