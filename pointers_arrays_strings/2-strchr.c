@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _strchr - find character in string
  * @s: string memory address
@@ -6,13 +8,16 @@
  */
 char *_strchr(char *s, char c)
 {
+	char *result = NULL;
+
 	while (*s != '\0')
 	{
 		if (*s == c)
 		{
+			result = s;
 			break;
 		}
 		s++;
 	}
-	return (s);
+	return (result);
 }
