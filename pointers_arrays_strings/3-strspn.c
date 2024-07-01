@@ -19,12 +19,12 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				count++;
 				match = 1;
-				continue;
 			}
 			i++;
 		}
 		if (match == 0)
 			break;
+		s++;
 	}
 
 	return (count);
