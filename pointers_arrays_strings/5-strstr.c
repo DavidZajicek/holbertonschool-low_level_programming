@@ -8,7 +8,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char *result = NULL, **marker;
+	char *result = NULL, **marker = *result;
 	int i = 0, found = 0;
 
 	while (*haystack != '\0')
@@ -32,7 +32,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 			if (found == 1)
 			{
-				result = marker;
+				result = *marker;
 				break;
 			}
 		}
