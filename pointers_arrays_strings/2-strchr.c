@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+
 /**
  * _strchr - find character in string
  * @s: string memory address
