@@ -29,3 +29,4 @@
 1-memcpy.c - Copy memory
 2-strchr.c - Locate a character in a string
 3-strcpn.c - get the length of a prefix given a string of characters to compare?
+4-strpbrk.c - search a string for a set of bites
