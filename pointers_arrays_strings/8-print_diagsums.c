@@ -12,7 +12,7 @@ void print_diagsums(int *a, int size)
 
 	while (i < size)
 	{
-		sum1 += a[((i * size + k) * sizeof(int))];
+		sum1 += a[((i * size + k))];
 		i++;
 		k++;
 	}
