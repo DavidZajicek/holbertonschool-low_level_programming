@@ -8,25 +8,25 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i, found = 0;
 	char *match = NULL;
 
 	while (*s != '\0')
 	{
-		if (*match != NULL)
+		if (found != 0)
 			break;
 		i = 0;
 		while (accept[i] != '\0')
 		{
 			if (*s == accept[i])
 			{
-			        match = s;
+				match = s;
+				found = 1;
 				break;
 			}
 			i++;
 		}
 		s++;
 	}
-
 	return (match);
 }
