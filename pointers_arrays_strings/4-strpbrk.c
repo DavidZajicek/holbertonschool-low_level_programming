@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * _strpbrk - search string of bytes
  * @s: string to test
