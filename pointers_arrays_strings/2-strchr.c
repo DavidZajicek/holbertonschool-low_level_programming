@@ -19,5 +19,7 @@ char *_strchr(char *s, char c)
 		}
 		s++;
 	}
+	if (c == '\0')
+		result = s;
 	return (result);
 }
