@@ -1,5 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+
+int digits_only(char *s)
+{
+	while (*s)
+	{
+		if (isdigit(*s++) == 0)
+		{
+			return (0);
+		}
+	}
+	return (1);
+}
 
 /**
  * main - adds the given args
@@ -14,7 +27,7 @@ int main(int argc, char *argv[])
 
 	while (i < argc)
 	{
-		if (atoi(argv[i]) != 0)
+		if (digits_only(argv[i]))
 		{
 			count += atoi(argv[i]);
 		}
