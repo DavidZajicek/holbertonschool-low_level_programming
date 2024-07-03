@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include <ctype.h>
 
+/**
+ * digits_only - check for numbers
+ * @s: string to check
+ * Return: 0 if only numbers, 1 if non-num found
+ */
 int digits_only(char *s)
 {
 	while (*s)
