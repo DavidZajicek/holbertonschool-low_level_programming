@@ -6,4 +6,5 @@
 2-strlen_recursion.c - return the length of a string  
 3-factorial.c - return the factorial of a given number  
 4-pow_recursion.c - return x pow y  
-5-sqrt_recursion.c - returnt he square root of n  
+5-sqrt_recursion.c - return the square root of n  
+6-is_prime_number.c - return if n is prime or not
