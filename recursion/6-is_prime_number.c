@@ -10,7 +10,7 @@
 int _find_prime(int i, int sqrt, int n)
 {
 	if (n % i == 0)
-		return (0)
+		return (0);
 	if (i <= sqrt)
 		_find_prime(i + 1, sqrt, n);
 	return (1);
