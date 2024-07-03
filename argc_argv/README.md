@@ -1,3 +1,4 @@
 # C - argc and argv
 
-0-whatsmyname.c - A program that prints it's name
+0-whatsmyname.c - A program that prints it's name  
+1-args.c - Print the number of args passed  
