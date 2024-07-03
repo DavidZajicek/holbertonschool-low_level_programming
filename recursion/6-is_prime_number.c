@@ -25,8 +25,8 @@ int is_prime_number(int n)
 {
 	int sqrt = _sqrt_recursion(n);
 
-	if (n <= 1)
-	{
+	if (n >= 1)
 		return (_find_prime(2, sqrt, n));
-	}
+	else
+		return (0);
 }
