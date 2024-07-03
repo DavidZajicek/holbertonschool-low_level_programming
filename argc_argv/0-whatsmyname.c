@@ -2,12 +2,13 @@
 
 /**
  * main - prints the program's name
+ * @argc: argc
  * @argv: argv
  * Return: 0
  */
-int main(char *argv[])
+int main(int argc, char *argv[])
 {
-	puts(argv[0]);
+	puts(argv[argc - 1]);
 
 	return (0);
 }
