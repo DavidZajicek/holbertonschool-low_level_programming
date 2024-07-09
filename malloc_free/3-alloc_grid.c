@@ -2,23 +2,6 @@
 #include <stdlib.h>
 
 /**
- * free_grid - free the grid
- * @grid: grid to free
- * @depth: depth of array to free
- * Return: void
- */
-void free_grid(int **grid, int depth)
-{
-	int i;
-
-	for (i = 0; i <= depth; i++)
-	{
-		free(grid[i]);
-	}
-	free(grid);
-}
-
-/**
  * alloc_grid - allocate 2D array of ints
  * @width: int
  * @height: int
