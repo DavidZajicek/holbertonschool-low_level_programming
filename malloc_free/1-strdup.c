@@ -27,7 +27,7 @@ char *_strdup(char *str)
 	char *result;
 	unsigned int i = walk_string(str), j = 0;
 
-	if (*str == NULL)
+	if (str == NULL)
 		return (NULL);
 
 	result = malloc(sizeof(char) * i);
