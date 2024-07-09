@@ -2,6 +2,23 @@
 #include <stdlib.h>
 
 /**
+ * free_grid - free the grid
+ * @grid: grid to free
+ * @depth: depth of array to free
+ * Return: void
+ */
+void free_grid(int **grid, int depth)
+{
+	int i;
+
+	for (i = 0; i <= depth; i++)
+	{
+		free(grid[i]);
+	}
+	free(grid);
+}
+
+/**
  * alloc_grid - allocate 2D array of ints
  * @width: int
  * @height: int
@@ -22,7 +39,7 @@ int **alloc_grid(int width, int height)
 		result[i] = malloc(width * sizeof(int));
 		if (result[i] == NULL)
 		{
-			free(result);
+			free(result, i);
 			return (NULL);
 		}
 		for (j = 0; j < width; j++)
