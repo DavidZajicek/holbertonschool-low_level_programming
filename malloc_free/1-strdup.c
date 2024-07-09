@@ -18,11 +18,11 @@ unsigned int walk_string(char *str)
 }
 
 /**
- * strdup - create an array
+ * _strdup - create an array
  * @str: string to create
  * Return: pointer or NULL
  */
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *result;
 	unsigned int i = walk_string(str), j = 0;
