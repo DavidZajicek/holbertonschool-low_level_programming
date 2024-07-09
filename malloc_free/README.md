@@ -2,3 +2,4 @@
 
 0-create_array.c - create an array of chars
 1-strdup.c - string malloc
+2-str_concat.c - concat string
