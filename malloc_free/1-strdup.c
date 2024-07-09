@@ -25,12 +25,14 @@ unsigned int walk_string(char *str)
 char *_strdup(char *str)
 {
 	char *result;
-	unsigned int i = walk_string(str), j = 0;
+	unsigned int i = 0, j = 0;
 
 	if (str == NULL)
 		return (NULL);
 
-	result = malloc(sizeof(char) * i);
+	i = walk_string(str);
+
+	result = malloc(sizeof(char) * (i + 1));
 
 	if (result == NULL)
 		return (NULL);
