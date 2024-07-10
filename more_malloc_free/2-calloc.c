@@ -9,7 +9,18 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+	unsigned int total = nmemb * size, i = 0;
+	void *result;
+
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	return (malloc(nmemb * size));
+	result = malloc(total);
+	if (result == NULL)
+		return (NULL);
+	while (i < total)
+	{
+		result[i] = 0;
+		i++;
+	}
+	return (result);
 }
