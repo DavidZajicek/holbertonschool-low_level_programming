@@ -1,19 +1,19 @@
-#ifndef dog
-#define dog
+#ifndef Dog
+#define Dog
 
 /**
- * struct Dog - dog
+ * struct dog - dog
  * @name: string name of the dog
  * @age: float age of the dog
  * @owner: String of the owner name
  *
  * Description: a dog
  */
-struct Dog
+typedef struct dog
 {
 	char *name;
 	float age;
 	char *owner;
-};
+} dog;
 
 #endif
