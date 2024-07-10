@@ -2,6 +2,23 @@
 #include <stdlib.h>
 
 /**
+ * count_len - count length of given string
+ * @str: string to count length
+ * Return: length of str
+ */
+unsigned int count_len(char *str)
+{
+	unsigned int count = 0;
+
+	while (*str != '\0')
+	{
+		count++;
+		str++;
+	}
+	return (count);
+}
+
+/**
  * string_nconcat - concat two strings
  * @s1: string one
  * @s2: string two
@@ -11,7 +28,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i = 0, j = 0;
-	char *result = malloc(sizeof(char) * 20);
+	char *result;
 
 	if (result == NULL)
 		return (NULL);
@@ -19,6 +36,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
+	result = malloc((sizeof(char) * (count_len(s1) + count_len(s2) + 1)))
 	while (*s1 != '\0')
 	{
 		result[j] = *s1;
