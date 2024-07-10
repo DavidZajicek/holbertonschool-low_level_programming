@@ -43,6 +43,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
 	int i;
+	char *dog_name, *owner_name;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
@@ -50,8 +51,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (dog == NULL)
 		return (NULL);
 
-	char *dog_name = alloc_string(name);
-	char *owner_name = alloc_string(owner);
+	dog_name = alloc_string(name);
+	owner_name = alloc_string(owner);
 
 	if (dog_name == NULL || owner_name == NULL)
 	{
