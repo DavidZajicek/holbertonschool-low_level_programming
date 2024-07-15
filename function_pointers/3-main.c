@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	if (func == NULL)
 	{
-		printf("Error\n", argv[2]);
+		printf("Error\n");
 		return (99);
 	}
 	result = func(atoi(argv[1]), atoi(argv[3]));
