@@ -6,22 +6,31 @@
  *
  * @a: int a
  * @b: int b
+ * Return: int
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
+/**
+ * op_sub - sub
+ *
+ * @a: int a
+ * @b: int b
+ * Return: int
+ */
 int op_sub(int a, int b)
 {
 	return (a - b);
 }
 
 /**
- * struct op - Struct op
+ * op_mul - mul
  *
- * @op: The operator
- * @f: The function associated
+ * @a: int a
+ * @b: int b
+ * Return: int
  */
 int op_mul(int a, int b)
 {
@@ -29,10 +38,11 @@ int op_mul(int a, int b)
 }
 
 /**
- * struct op - Struct op
+ * op_div - div
  *
- * @op: The operator
- * @f: The function associated
+ * @a: int a
+ * @b: int b
+ * Return: int
  */
 int op_div(int a, int b)
 {
@@ -42,10 +52,11 @@ int op_div(int a, int b)
 }
 
 /**
- * struct op - Struct op
+ * op_mod - mod
  *
- * @op: The operator
- * @f: The function associated
+ * @a: int a
+ * @b: int b
+ * Return: int
  */
 int op_mod(int a, int b)
 {
