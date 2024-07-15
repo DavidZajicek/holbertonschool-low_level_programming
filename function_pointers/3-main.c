@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc != 4)
 	{
-		printf("Error Args\n");
+		printf("Error\n");
 		return (98);
 	}
 
@@ -23,13 +23,13 @@ int main(int argc, char *argv[])
 
 	if (func == NULL)
 	{
-		printf("Error Ops, %s\n", argv[2]);
+		printf("Error\n", argv[2]);
 		return (99);
 	}
 	result = func(atoi(argv[1]), atoi(argv[3]));
 	if (result == -1)
 	{
-		printf("Error Math\n");
+		printf("Error\n");
 		return (100);
 	}
 	printf("%d\n", result);
