@@ -2,22 +2,16 @@
 #include "3-calc.h"
 
 /**
- * struct op - Struct op
+ * op_add - Add
  *
- * @op: The operator
- * @f: The function associated
+ * @a: int a
+ * @b: int b
  */
 int op_add(int a, int b)
 {
 	return (a + b);
 }
 
-/**
- * struct op - Struct op
- *
- * @op: The operator
- * @f: The function associated
- */
 int op_sub(int a, int b)
 {
 	return (a - b);
