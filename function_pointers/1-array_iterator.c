@@ -1,0 +1,17 @@
+/**
+ * array_iterator - iterate on an array of data
+ * @array: array
+ * @size: size of the array
+ * @action: pointer to a function to do for each element
+ * Return: nothing
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	int i = 0;
+
+	while (i < size)
+	{
+		action(array[i]);
+		i++;
+	}
+}
