@@ -1,4 +1,4 @@
-#include <stdgar.h>
+#include <stdarg.h>
 
 /**
  * sum_them_all - sum all args passed
