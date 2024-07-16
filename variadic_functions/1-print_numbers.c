@@ -1,5 +1,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * print_numbers - print numbers
@@ -9,11 +10,11 @@
  */
 void print_numbers(const char *separator, const unsigned int count, ...)
 {
-	if (count == 0 || separator == NULL)
-		return;
-
 	va_list args;
 	unsigned int i = 0;
+
+	if (count == 0 || separator == NULL)
+		return;
 
 	va_start(args, count);
 
