@@ -33,8 +33,7 @@ void print_all(const char *format, ...)
 
 	while (format[i] != '\0' && format != NULL)
 	{
-		i++;
-		switch (format[i - 1])
+		switch (format[i])
 		{
 		case ('c'):
 			putchar(va_arg(args, int));
@@ -50,8 +49,10 @@ void print_all(const char *format, ...)
 			printf("%f", va_arg(args, double));
 			break;
 		default:
+			i++;
 			continue;
 		}
+		i++;
 		if (format[i] == '\0')
 		{
 			return;
