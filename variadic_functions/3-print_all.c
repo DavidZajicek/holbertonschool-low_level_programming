@@ -54,7 +54,7 @@ void print_all(const char *format, ...)
 			break;
 		case ('\0'):
 			flags = 0;
-			return;
+			break;
 		default:
 			i++;
 			continue;
