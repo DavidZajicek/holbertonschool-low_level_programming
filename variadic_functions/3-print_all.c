@@ -55,10 +55,10 @@ void print_all(const char *format, ...)
 		i++;
 		if (format[i] == '\0')
 		{
+			printf("\n");
 			return;
 		}
 		printf(", ");
 	}
-	printf("\n\n");
 	va_end(args);
 }
