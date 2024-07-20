@@ -51,7 +51,7 @@ void print_all(const char *format, ...)
 			break;
 		}
 		i++;
-		if (format[i + 1] == NULL)
+		if (format[i + 1] == '\0')
 			return;
 		printf(", ");
 	}
