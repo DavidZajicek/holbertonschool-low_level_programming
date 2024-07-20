@@ -27,8 +27,7 @@ void print_all(const char *format, ...)
 {
 	va_list args;
 	int i = 0;
-	char *temp_s;
-	char temp_c;
+	char *temp;
 
 	va_start(args, format);
 
@@ -37,11 +36,10 @@ void print_all(const char *format, ...)
 		switch (format[i])
 		{
 		case ('c'):
-			temp_c = va_arg(args, char);
-			print_string(temp);
+			putchar(va_arg(args, int));
 			break;
 		case ('s'):
-			temp_s = va_arg(args, char *);
+			temp = va_arg(args, char *);
 			print_string(temp);
 			break;
 		case ('i'):
