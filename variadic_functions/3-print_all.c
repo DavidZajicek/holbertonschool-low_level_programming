@@ -48,6 +48,8 @@ void print_all(const char *format, ...)
 		case ('f'):
 			printf("%f", va_arg(args, double));
 			break;
+		default:
+			continue;
 		}
 		if (format[i + 1] == '\0')
 		{
