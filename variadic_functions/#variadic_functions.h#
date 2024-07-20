@@ -1,5 +1,5 @@
 #ifndef VariadicFunctionsHeader
-#define VariadicFunctionsHeader
+11;rgb:2b2b/2b2b/2b2b#define VariadicFunctionsHeader
 
 int _putchar(char c);
 int sum_them_all(const unsigned int n, ...);
@@ -7,6 +7,12 @@ void print_numbers(const char *separator, const unsigned int count, ...);
 void print_strings(const char *separator, const unsigned int count, ...);
 
 void print_all(const char *format, ...);
+
+typedef struct print_op
+{
+	char *op;
+	int (f*)(void *s);
+} print_op_t;
 
 void print_string(char *s);
 void print_int(int i);
