@@ -50,13 +50,13 @@ void print_all(const char *format, ...)
 			printf("%f", va_arg(args, double));
 			break;
 		}
-		i++;
 		if (format[i + 1] == '\0')
 		{
 			printf("\n");
 			return;
 		}
 		printf(", ");
+		i++;
 	}
 	va_end(args);
 }
