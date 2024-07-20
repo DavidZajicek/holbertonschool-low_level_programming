@@ -59,6 +59,6 @@ void print_all(const char *format, ...)
 		}
 		printf(", ");
 	}
-	putchar('\n');
+	printf("\n");
 	va_end(args);
 }
