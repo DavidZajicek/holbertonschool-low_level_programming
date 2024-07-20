@@ -53,14 +53,14 @@ void print_all(const char *format, ...)
 			printf("%f", va_arg(args, double));
 			break;
 		case ('\0'):
-			i++;
 			printf("\n");
 			return;
 		default:
 			i++;
 			continue;
 		}
-		printf(", ");
+		if (format[i] != '\0')
+			printf(", ");
 	}
 	va_end(args);
 }
