@@ -26,12 +26,12 @@ void print_string(char *s)
 void print_all(const char *format, ...)
 {
 	va_list args;
-	int i = 0;
+	int i = 0, flags = 1;
 	char *temp;
 
 	va_start(args, format);
 
-	while (format != NULL)
+	while (format != NULL && flags == 1)
 	{
 		switch (format[i])
 		{
@@ -53,6 +53,7 @@ void print_all(const char *format, ...)
 			printf("%f", va_arg(args, double));
 			break;
 		case ('\0'):
+			flags = 0;
 			return;
 		default:
 			i++;
