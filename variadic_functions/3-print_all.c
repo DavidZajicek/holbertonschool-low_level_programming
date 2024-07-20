@@ -53,7 +53,6 @@ void print_all(const char *format, ...)
 			printf("%f", va_arg(args, double));
 			break;
 		case ('\0'):
-			printf("\n");
 			return;
 		default:
 			i++;
@@ -62,5 +61,6 @@ void print_all(const char *format, ...)
 		if (format[i] != '\0')
 			printf(", ");
 	}
+	printf("\n");
 	va_end(args);
 }
