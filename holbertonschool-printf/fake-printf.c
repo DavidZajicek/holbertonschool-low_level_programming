@@ -29,7 +29,7 @@ int pick_operation(char flag)
 int _printf(const char *format, ...)
 {
 	va_list vargs;
-	int i = 0;
+	int i = 0, size = 0;
 	int flagged = 0;
 	char *result;
 
@@ -56,7 +56,6 @@ int _printf(const char *format, ...)
 		}
 	}
 
-	
 	va_end(vargs);
 	return (0);
 }
