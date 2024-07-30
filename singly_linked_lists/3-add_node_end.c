@@ -3,6 +3,17 @@
 #include <string.h>
 #include "lists.h"
 
+
+/**
+ * create_node - create node
+ * @str: string
+ * Return: list_t *
+ */
+list_t *create_node(const char *str)
+{
+	
+}
+
 /**
  * add_node_end - add node to end of linked list
  * @head: start of linked list
