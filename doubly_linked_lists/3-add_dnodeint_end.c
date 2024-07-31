@@ -2,25 +2,6 @@
 #include "lists.h"
 
 /**
- * create_dnode - create dnode
- * @n: n
- * Return: address of new node
- */
-dlistint_t *create_dnode(const int n)
-{
-	dlistint_t *new_node = (dlistint_t *)malloc(sizeof(dlistint_t));
-
-	if (new_node == NULL)
-	{
-		return (NULL);
-	}
-	new_node->n = n;
-	new_node->prev = NULL;
-	new_node->next = NULL;
-	return (new_node);
-}
-
-/**
  * add_dnodeint_end - add node to end of dll
  * @head: head of list
  * @n: n
