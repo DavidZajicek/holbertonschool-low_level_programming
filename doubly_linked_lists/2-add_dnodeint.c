@@ -29,13 +29,13 @@ dlistint_t *create_dnode(const int n)
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
-	dlistint_t *new_node;
+	dlistint_t *new_node, *current_node = *head;
 
 	new_node = create_dnode(n);
 	if (new_node == NULL)
 		return (NULL);
 
 	new_node->next = *head;
-	head->prev = new_node;
+	current_node->prev = new_node;
 	return (new_node);
 }
