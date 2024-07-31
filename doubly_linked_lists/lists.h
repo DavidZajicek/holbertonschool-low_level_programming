@@ -30,4 +30,6 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head,
 				     unsigned int index, int n);
 dlistint_t *create_dnode(const int n);
 
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+
 #endif
