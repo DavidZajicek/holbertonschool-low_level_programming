@@ -12,8 +12,6 @@ size_t print_dlistint(const dlistint_t *head)
 	const dlistint_t *node = head;
 	size_t count = 0;
 
-	if (head == NULL)
-		return (-1);
 	while (node != NULL)
 	{
 		count++;
