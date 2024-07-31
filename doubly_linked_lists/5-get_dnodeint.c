@@ -10,7 +10,7 @@
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	const dlistint_t *node = head;
+	dlistint_t *node = head;
 	unsigned int count = 0;
 
 	while (node != NULL)
