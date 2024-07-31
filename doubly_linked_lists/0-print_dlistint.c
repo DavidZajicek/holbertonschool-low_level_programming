@@ -9,7 +9,7 @@
  */
 size_t print_dlistint(const dlistint_t *head)
 {
-	dlistint_t *node = head;
+	const dlistint_t *node = head;
 	size_t count = 0;
 
 	if (head == NULL)
