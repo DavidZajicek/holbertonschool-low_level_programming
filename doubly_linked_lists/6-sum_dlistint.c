@@ -1,0 +1,21 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include "lists.h"
+
+/**
+ * sum_dlistint - sum n from all nodes
+ * @head: head of list
+ * Return: sum
+ */
+int sum_dlistint(dlistint_t *head)
+{
+	dlistint_t *node = head;
+	int count = 0;
+
+	while (node != NULL)
+	{
+		count += node->n;
+		node = node->next;
+	}
+	return (count);
+}
