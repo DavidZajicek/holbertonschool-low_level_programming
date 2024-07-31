@@ -36,7 +36,7 @@ dlistint_t *insert_dnodeint_at_index(
 		{
 			if (current_node == NULL)
 			{
-				current_node = add_dnodeint_end(n);
+				current_node = add_dnodeint_end(head, n);
 				return (current_node);
 			}
 			new_node = create_dnode(n);
