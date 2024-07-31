@@ -26,28 +26,25 @@ dlistint_t *insert_dnodeint_at_index(
 		return (NULL);
 	}
 
-	while (count <= index)
+	while (current_node != NULL && count < index)
 	{
-		if (current_node == NULL && count != index)
-		{
-			return (NULL);
-		}
-		if (count == index)
-		{
-			if (current_node == NULL)
-			{
-				current_node = add_dnodeint_end(head, n);
-				return (current_node);
-			}
-			new_node = create_dnode(n);
-			new_node->prev = current_node->prev;
-			new_node->next = current_node;
-			current_node->prev->next = new_node;
-			current_node->next = new_node;
-			return (new_node);
-		}
 		count++;
 		current_node = current_node->next;
+	}
+
+	if (count == index && current_node != NULL)
+	{
+		new_node = create_dnode(n);
+		new_node->prev = current_node->prev;
+		new_node->next = current_node;
+		current_node->prev->next = new_node;
+		current_node->next = new_node;
+		return (new_node);
+	}
+	if (count == index && current_node == NULL)
+	{
+		current_node = add_dnodeint_end(head, n);
+		return (current_node);
 	}
 	return (NULL);
 }
