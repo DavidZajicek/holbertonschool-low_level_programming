@@ -22,5 +22,7 @@ void free_list(list_t *head)
 			free(temp_node->str);
 		free(temp_node);
 	}
+	if (temp_node->str !=NULL)
+		free(temp_node->str);
 	free(current_node);
 }
