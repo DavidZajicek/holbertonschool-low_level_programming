@@ -1,0 +1,16 @@
+#include <stdlib.h>
+#include "lists.h"
+
+
+
+/**
+ * insert_dnodeint_at_index - instert node
+ * @head: head of list
+ * @index: index to add new node
+ * @n: value for new node
+ * Return: address of new node
+ */
+dlistint_t *insert_dnodeint_at_index(
+	dlistint_t **head, unisgned int index, int n)
+{
+}
