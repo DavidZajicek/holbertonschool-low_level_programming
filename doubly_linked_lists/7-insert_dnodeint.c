@@ -37,8 +37,11 @@ dlistint_t *insert_dnodeint_at_index(
 		new_node = create_dnode(n);
 		new_node->prev = current_node->prev;
 		new_node->next = current_node;
-		current_node->prev->next = new_node;
-		current_node->next = new_node;
+		if (current_node->prev != NULL)
+		{
+			current_node->prev->next = new_node;
+		}
+		current_node->prev = new_node;
 		return (new_node);
 	}
 	if (count == index && current_node == NULL)
