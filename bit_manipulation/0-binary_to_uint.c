@@ -19,9 +19,9 @@ unsigned int binary_to_uint(const char *b)
 		else
 			return (0);
 	}
-	while (i--)
+	for (i - 1; i >= 0; i--)
 	{
-		if (b[i - 1] == '1')
+		if (b[i] == '1')
 			result += pow;
 		pow *= 2;
 	}
