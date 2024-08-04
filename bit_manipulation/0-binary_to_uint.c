@@ -20,7 +20,7 @@ unsigned int binary_to_uint(const char *b)
 	}
 	while (i--)
 	{
-		result += (b[i - 1] - 47) * pow;
+		result += (b[i - 1]) * pow;
 		pow *= 2;
 	}
 	return (result);
