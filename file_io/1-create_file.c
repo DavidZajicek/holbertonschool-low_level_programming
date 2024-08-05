@@ -2,6 +2,7 @@
 #include <unistd.h>
 #include <stddef.h>
 #include <fcntl.h>
+#include <string.h>
 
 /**
  * create_file - create file
