@@ -11,8 +11,8 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int n, input_file;
-	char buffer[50];
+	int n, fd;
+	char buf[50];
 
 	if (filename == NULL)
 		return (0);
