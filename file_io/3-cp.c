@@ -26,8 +26,9 @@ void copy_contents(int fd1, int fd2, char *buf, char *fn1, char *fn2)
 {
 	int bytes_read, bytes_wrote;
 
-	while ((bytes_read = read(fd1, buf, sizeof(buf))))
+	while ((bytes_read = read(fd1, buf, 1024)))
 	{
+		buf[bytes_read] = '\0';
 		if (bytes_read == -1)
 		{
 			close_fd(fd1, fn1);
@@ -80,7 +81,7 @@ int main(int argc, char *argv[])
 			"Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	buf = malloc(sizeof(char) * 1024);
+	buf = malloc(sizeof(char) * 1025);
 	if (buf == NULL)
 	{
 		close_fd(fd1, argv[1]);
