@@ -28,7 +28,6 @@ void copy_contents(int fd1, int fd2, char *buf, char *fn1, char *fn2)
 
 	while ((bytes_read = read(fd1, buf, 1024)))
 	{
-		buf[bytes_read] = '\0';
 		if (bytes_read == -1)
 		{
 			close_fd(fd1, fn1);
@@ -37,7 +36,7 @@ void copy_contents(int fd1, int fd2, char *buf, char *fn1, char *fn2)
 				"Error: Can't read from file %s\n", fn1);
 			exit(98);
 		}
-		bytes_wrote = write(fd2, buf, sizeof(buf));
+		bytes_wrote = write(fd2, buf, bytes_read);
 		if (bytes_wrote == -1)
 		{
 			close_fd(fd1, fn1);
