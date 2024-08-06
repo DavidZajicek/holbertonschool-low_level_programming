@@ -4,29 +4,25 @@
 #include <string.h>
 #include <stdlib.h>
 
-void err_exit(char *format, int err_no)
-{
-	write(STDERR_FILENO, format, strlen(format));
-	exit(err_no);
-}
-
 /**
  * close_fd - close fd
  * @fd: fd to close
  * Return: void
  */
-void close_fd(int fd)
+void close_fd(int fd, char *fn)
 {
 	int close_err;
 	close_err = close(fd);
 	if (close_err == -1)
 	{
-		err_exit("Error: Can't close fd %s\n", fd);
+		dprintf(STDERR_FILENO,
+			"Error: Can't close fd %s\n", fn);
+		exit(100);
 	}
 }
 
 
-void copy_contents(int fd1, int fd2, char *buf)
+void copy_contents(int fd1, int fd2, char *buf, char *fn1, char *fn2)
 {
 	int bytes_read, bytes_wrote;
 
@@ -34,16 +30,20 @@ void copy_contents(int fd1, int fd2, char *buf)
 	{
 		if (bytes_read == -1)
 		{
-			close_fd(fd1);
-			close_fd(fd2);
-			err_exit("Error: Can't read from file \n", 98);
+			close_fd(fd1, fn1);
+			close_fd(fd2, fn2);
+			dprintf(STDERR_FILENO,
+				"Error: Can't read from file %s\n", fn1);
+			exit(98);
 		}
 		bytes_wrote = write(fd2, buf, sizeof(buf));
 		if (bytes_wrote == -1)
 		{
-			close_fd(fd1);
-			close_fd(fd2);
-			err_exit("Error: Can't write to %s\n", 99);
+			close_fd(fd1, fn1);
+			close_fd(fd2, fn2);
+			dprintf(STDERR_FILENO,
+				"Error: Can't write to %s\n", fn2);
+			exit(99);
 		}
 	}
 }
@@ -60,28 +60,38 @@ int main(int argc, char *argv[])
 	char *buf;
 
 	if (argc != 3)
-		err_exit("Usage: cp file_from file_to\n", 97);
+	{
+		dprintf(STDERR_FILENO,
+			"Usage: cp file_from file_to\n");
+		exit(97);
+	}
 	fd1 = open(argv[1], O_RDONLY);
 	if (fd1 == -1)
-		err_exit("Error: Can't read from file \n", 98);
+	{
+		dprintf(STDERR_FILENO,
+			"Error: Can't read from file %s\n", argv[1]);
+		exit(98);
+	}
 	fd2 = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd2 == -1)
 	{
-		close_fd(fd1);
-		err_exit("Error: Can't write to \n", 99);
+		close_fd(fd1, argv[1]);
+		dprintf(STDERR_FILENO,
+			"Error: Can't write to %s\n", argv[2]);
+		exit(99);
 	}
 	buf = malloc(sizeof(char) * 1024);
 	if (buf == NULL)
 	{
-		close_fd(fd1);
-		close_fd(fd2);
+		close_fd(fd1, argv[1]);
+		close_fd(fd2, argv[2]);
 		return (-1);
 	}
 
-	copy_contents(fd1, fd2, buf);
+	copy_contents(fd1, fd2, buf, argv[1], argv[2]);
 
-	close_fd(fd1);
-	close_fd(fd2);
+	close_fd(fd1, argv[1]);
+	close_fd(fd2, argv[2]);
 	free(buf);
 	return (1);
 }
