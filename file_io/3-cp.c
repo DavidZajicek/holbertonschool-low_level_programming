@@ -93,5 +93,5 @@ int main(int argc, char *argv[])
 	close_fd(fd1, argv[1]);
 	close_fd(fd2, argv[2]);
 	free(buf);
-	return (1);
+	return (0);
 }
