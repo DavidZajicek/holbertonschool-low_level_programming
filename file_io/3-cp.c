@@ -7,11 +7,13 @@
 /**
  * close_fd - close fd
  * @fd: fd to close
+ * @fn: filename
  * Return: void
  */
 void close_fd(int fd, char *fn)
 {
 	int close_err;
+
 	close_err = close(fd);
 	if (close_err == -1)
 	{
@@ -21,7 +23,15 @@ void close_fd(int fd, char *fn)
 	}
 }
 
-
+/**
+ * copy_contents - copy
+ * @fd1: fd1
+ * @fd2: fd2
+ * @buf: buf
+ * @fn1: fn1
+ * @fn2: fn2
+ * Return: void
+ */
 void copy_contents(int fd1, int fd2, char *buf, char *fn1, char *fn2)
 {
 	int bytes_read, bytes_wrote;
